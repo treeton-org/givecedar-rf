@@ -33,10 +33,9 @@ jobs:
           port: 22
           username: root
           key: ${{ secrets.SSH_DEPLOY_PRIVATE_KEY }}
-          source: docker,docker-compose.yaml,.env.prod,./dist/
+          source: docker,docker-compose.yaml,.env.prod,dist
           target: /srv/${{ github.repository }}
           overwrite: true
-          strip_components: 1
 
       - name: Docker compose up
         uses: appleboy/ssh-action@v0.1.5
