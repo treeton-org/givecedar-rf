@@ -1,0 +1,30 @@
+@import common/scale
+@import common/link
+
+.Cover
+  width: 100%
+  position: relative
+  line-height: 0
+
+  > img
+    width: 100%
+    border-radius: calc(32 * $activeWidth / 1024)
+    line-height: 0
+    margin: 0
+    padding: 0
+
+  > div
+    position: absolute
+    right: calc(16 * $activeWidth / 1024)
+    bottom: calc(16 * $activeWidth / 1024)
+
+    > span
+      display: inline-block
+      color: #DDD
+      background: #222C
+      border-radius: calc(32 * $activeWidth / 1024)
+      font-size: calc(32 * $activeWidth / 1024)
+      line-height: 2em
+      margin: 0
+      padding-left: calc(16 * $activeWidth / 1024)
+      padding-right: calc(16 * $activeWidth / 1024)

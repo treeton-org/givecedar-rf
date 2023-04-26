@@ -1,0 +1,16 @@
+@import common/scale
+
+.OrderButton
+  display: inline-block
+  text-decoration: none
+  width: 100%
+  color: #DDD
+  font-size: calc(48 * $activeWidth / 1024)
+  line-height: calc(128 * $activeWidth / 1024)
+  text-align: center
+  background: #222
+  border-radius: calc(32 * $activeWidth / 1024)
+  margin-top: calc(24 * $activeWidth / 1024)
+
+.OrderButton:active
+  background: #444
